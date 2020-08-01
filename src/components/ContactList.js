@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Segment } from "semantic-ui-react";
+import classNames from "classnames";
 
 class ContactList extends Component {
   render() {
@@ -10,7 +11,12 @@ class ContactList extends Component {
           this.props.contactList.map((c) => (
             <Segment
               vertical
-              className="ContactPerson"
+              className={classNames({
+                ContactPerson: true,
+                Selected:
+                  this.props.selectedUserId &&
+                  this.props.selectedUserId === c.id,
+              })}
               onClick={() => this.props.contactPersonSelected(c.id)}
               key={c.id}
               id={c.id}

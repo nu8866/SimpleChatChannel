@@ -59,12 +59,14 @@ class Overview extends Component {
     super(props);
     this.state = {
       currentUser: userInfo,
+      selectedUserId: "",
     };
     this.contactPersonSelected = this.contactPersonSelected.bind(this);
   }
 
   contactPersonSelected(userId) {
-    const { currentUser } = this.state;
+    this.setState({ selectedUserId: userId });
+    const currentUser = this.state.currentUser;
     const user = contactList.find((user) => user.id === userId);
     Talk.ready
       .then(() => {
@@ -99,10 +101,11 @@ class Overview extends Component {
             <ContactList
               contactList={contactList}
               contactPersonSelected={this.contactPersonSelected}
+              selectedUserId={this.state.selectedUserId}
             />
           </Segment>
           <Segment className="RightColumn" id="talkjs-container">
-            <i>Loading chat...</i>
+            <i>Start a chat!</i>
           </Segment>
         </div>
       </div>
