@@ -16,4 +16,4 @@ https://react.semantic-ui.com/
 
 ## Chat API + Javascript SDK
 
-https://talkjs.com/docs/
+https://talkjs.com
