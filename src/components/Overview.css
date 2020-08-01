@@ -1,0 +1,55 @@
+/* overview */
+.App {
+  width: 750px;
+  margin: auto;
+  padding: 15px;
+}
+.AppHeader {
+  text-align: center;
+  color: #00b5ad;
+}
+.AppBody {
+  margin-top: 40px;
+}
+.LeftColumn {
+  float: left;
+  width: 300px;
+  height: 500px;
+}
+.RightColumn {
+  float: right;
+  width: 420px;
+  height: 500px;
+  padding: 15px;
+  margin: 0 !important;
+}
+/* ContactPerson */
+.ContactPerson {
+  height: 3vw;
+  display: flex;
+  align-items: center;
+}
+.ContactPerson img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+.ContactPerson span {
+  font-size: 18px;
+  padding-left: 5px;
+}
+/* UserInfo */
+.UserInfo {
+  height: 6vw;
+  display: flex;
+  align-items: center;
+}
+.UserInfo img {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+}
+.UserInfo span {
+  font-size: 24px;
+  padding-left: 8px;
+}
