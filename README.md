@@ -6,10 +6,6 @@ Download code, open it in a code editor and in terminal run the following comman
 
 `npm start`
 
-## Test Data
-
-
-
 ## UI liabrary used
 
 https://react.semantic-ui.com/
